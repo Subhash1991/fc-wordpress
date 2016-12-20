@@ -1,0 +1,271 @@
+/* popup_box DIV-Styles*/
+#fcwp_popupDiv { 
+    display:none; /* Hide the DIV */
+    position: absolute;  
+    width:40%;  
+    background-color:#fff;  
+    left: 31%;
+    top: 12%;
+    z-index:99999; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+   
+ 
+    /* additional features, can be omitted */ 
+    border: 12px solid #6c65ae;   
+    padding: 15px 25px;  
+    font-size:15px;  
+    -moz-box-shadow: 0 0 5px #D1E0E0;
+    -webkit-box-shadow: 0 0 5px #D1E0E0;
+    box-shadow: 0 0 5px #D1E0E0;
+}
+
+#fcwp_content_bg{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99997;    
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background-color:rgba(255,255,255,0.5);
+}
+
+#fcwp_container {
+    background: #d2d2d2; 
+    width:100%;
+    height:100%;
+}
+
+
+#fcwp_popupDiv  h1,
+#fcwp_popupDiv  h2,
+#fcwp_popupDiv  h3 {
+	color: #737373 ;
+}
+
+#fcwp_popupDiv  h1 {
+	font-weight: normal;
+    border-bottom: 1px dotted #ccd3e2;
+    padding-bottom: 11px;
+ }
+
+.error-info {
+	border: 1px solid #fda59f !important;
+}
+
+.error-text {
+	color: #f78179 !important;
+	font-size: 12px;
+}
+
+/* This is for the positioning of the Close Link */
+#fcwp_popupBoxClose {
+	cursor: pointer;  
+	text-decoration:none; 
+    font-size:20px;  
+    line-height:1;  
+    right:-20px;
+    top:-20px;  
+    position:absolute; 
+    z-index:10000; 
+    color:#fff;  
+    font-weight:500;
+    padding:3px 9px 6px;
+    background-color:#e05a5a;
+    border: 2px solid #fff;  
+    border-radius: 50%;
+    -moz-box-shadow: 0 0 5px #336f6f;
+    -webkit-box-shadow: 0 0 5px #336f6f;
+    box-shadow: 0 0 5px #336f6f;
+}
+
+#fcwp_popupBoxClose:hover {
+	background-color:#c76f6f;
+	-moz-box-shadow: 0 0 2px #336f6f;
+    -webkit-box-shadow: 0 0 2px #336f6f;
+    box-shadow: 0 0 2px #336f6f;
+}
+
+
+#fcwp_embedCode {
+	height: 200px;
+	width: 400px;
+	background-color: #fff;
+}
+
+#fcwp_step1 h1 {
+	font-size: 1.3em;
+}
+
+
+#fcwp_popupDiv  .fcwp_form-group {
+	width: 100%;
+	margin-bottom: 15px;
+	
+}
+
+#fcwp_popupDiv .fcwp_row {
+	width: auto;
+	margin: 0 -10px;
+}
+
+#fcwp_popupDiv .fcwp_row:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+#fcwp_popupDiv .fcwp_grid-1, #fcwp_popupDiv .fcwp_grid-2,
+#fcwp_popupDiv .fcwp_grid-3, #fcwp_popupDiv .fcwp_grid-4  {
+	box-sizing: border-box;
+	padding: 0 10px; 
+	float: left;
+}
+
+#fcwp_popupDiv .fcwp_grid-1 {
+	width: 100%;
+}
+
+#fcwp_popupDiv .fcwp_grid-2 {
+	width: 50%;
+}
+
+#fcwp_popupDiv .fcwp_grid-3 {
+	width: 33.33333%;
+}
+
+#fcwp_popupDiv .fcwp_grid-4 {
+	width: 25%;
+}
+
+
+#fcwp_popupDiv  .fcwp_form-group  label {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	font-size: 12px;
+	color: #9D9D9F;
+}
+
+#fcwp_popupDiv  .fcwp_form-group  input, #fcwp_popupDiv  .fcwp_form-group  select,
+#fcwp_popupDiv  .fcwp_form-group  input[type="number"] {
+	width: 100%;
+	box-sizing: border-box;
+	color: #737373;
+	padding: 6px !important;
+	background-color: #e8edf9;
+	border-color: #c5cde0;
+}
+
+#fcwp_popupDiv  .fcwp_form-group  select {
+	height: 31px;
+	line-height: 1;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background: #e8edf9 url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#818eaf' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+#fcwp_popupDiv  .fcwp_form-group  input[type="number"]  {
+	height: auto;
+}
+
+#showChartData {
+	margin-top: 10px;
+}
+
+#fcwp_popupDiv textarea {
+	width: 100%;
+	height: 80px;
+	color: #737373;
+	background-color: #e8edf9;
+	border: 1px dotted #c5cde0;
+	padding:8px;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+#fcwp_data {
+	margin-top: 10px;
+	box-sizing: border-box;
+
+}
+
+#fcwp_popupDiv button, #fcwp_popupDiv button:visited {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #6c65ae;
+	border: 1px solid #5c5aab;
+	border-radius: 2px;
+	padding:8px 15px;
+	cursor: pointer;
+}
+
+#fcwp_popupDiv button:hover, #fcwp_popupDiv button:active, #fcwp_popupDiv button:focus  {
+	background-color: #5c5aab;
+	border: 1px solid #4d4c90;
+}
+
+
+#fcwp_popupDiv  p {
+	font-size: 12px;
+	color: #9D9D9F;
+}
+
+.fcwp_grid-1 {
+	width: 100% !important;
+}
+
+
+#fcwp_preview {
+	text-align: center;
+}
+
+.fcwp_group {
+	display: block;
+}
+
+.fcwp_group input, .fcwp_group select  {
+	float: left;
+}
+
+.fcwp_group input {
+	width: 65% !important;
+}
+
+.fcwp_group select {
+	width: 30% !important;
+}
+
+p.small {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+	#fcwp_popupDiv{
+		width: 50%;
+		left: 25%;
+	}
+  #fcwp_popupDiv .fcwp_grid-2,  #fcwp_popupDiv .fcwp_grid-3, #fcwp_popupDiv .fcwp_grid-4 {
+    width: 100%;
+  }
+  #fcwp_popupDiv .fcwp_grid-2 label {
+  	margin-top: 10px;
+  }
+
+  .fcwp_group input {
+	width: 68% !important;
+	}
+
+	.fcwp_group select {
+		width: 30% !important;
+	}
+}
